@@ -15,10 +15,7 @@ function App() {
         <h1>%Gold Medal Time Calculator</h1>
       </header>
       <main>
-        <div class="boat-type">
-        {boatTypeMenu(selectBoatType)}
-        <p>{boatType}</p>
-        </div>
+        {boatTypeMenu(selectBoatType, boatType)}
       </main>
     </div>
   );

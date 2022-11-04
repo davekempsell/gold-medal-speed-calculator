@@ -33,16 +33,13 @@ main {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: solid 1px black;
   margin: 1rem;
 }
 
 .boat-type > p {
   display: flex;
   text-align: center;
-  border: solid 1px black;
   padding: 1rem;
-  margin: 10px;
   background-color: whitesmoke;
   min-width: 55px;
 }
