@@ -17,7 +17,7 @@ export function Speed(distance, time, setBoatSpeed) {
 
   return (
     <div className="speed">
-      <div className="label">
+      <div className="output-label">
         Speed 
       </div>
       <div className="speed-display">

@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgb(23, 15, 102);
   --secondary-color: rgb(211, 211, 211);
-  --tertiary-color: rgb(72, 62, 166);
+  --tertiary-color: rgb(207, 181, 59);
   --label-width: 120px;
   --input-width: 180px;
 }
@@ -114,7 +114,7 @@ main {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: var(--tertiary-color);
+  background-color: rgba(24, 15, 102, 0.69);
 }
 
 .label {
@@ -171,6 +171,21 @@ main {
   text-align: center;
 }
 
+.output-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--tertiary-color);
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: calc(10px + 1vh);
+  border: none;
+  width: var(--label-width);
+}
+
 .speed {
   display: flex;
   flex-direction: row;
@@ -184,6 +199,8 @@ main {
   justify-content: center;
   padding: 1rem;
   background-color: whitesmoke;
+  color: var(--primary-color);
+  font-weight: bold;
   font-size: calc(8px + 1vh);
   height: 100%;
   width: var(--input-width);
@@ -202,6 +219,8 @@ main {
   justify-content: center;
   padding: 1rem;
   background-color: whitesmoke;
+  color: var(--primary-color);
+  font-weight: bold;
   font-size: calc(8px + 1vh);
   height: 100%;
   width: var(--input-width);

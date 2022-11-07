@@ -13,7 +13,7 @@ export function GoldMedalSpeed(boatType, boatSpeed) {
 
   return (
     <div className="gms">
-      <div className="label">
+      <div className="output-label">
         %GMS 
       </div>
       <div className="gms-display">
