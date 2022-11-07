@@ -15,10 +15,10 @@ export function BoatTypeMenu(boatType, setBoatType) {
   const boatTypes = ['1x', '2x', '4x', '2-', '4-', '4+', '8+']
 
   return (
-    <div class="boat-type">
-      <div class="dropdown">
-        <button class="dropbtn">Boat Type</button>
-        <div class="dropdown-content">
+    <div className="boat-type">
+      <div className="dropdown">
+        <button className="dropbtn">Boat Type</button>
+        <div className="dropdown-content">
           {boatTypes.map(boat => {
             return (boatTypeButton(boat, boatType, setBoatType))
           })}
