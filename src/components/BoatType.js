@@ -10,7 +10,7 @@ function boatTypeButton(boat, boatType, setBoatType) {
   )
 }
 
-export function boatTypeMenu(boatType, setBoatType) {
+export function BoatTypeMenu(boatType, setBoatType) {
 
   const boatTypes = ['1x', '2x', '4x', '2-', '4-', '4+', '8+']
 

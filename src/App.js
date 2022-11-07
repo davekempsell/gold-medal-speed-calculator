@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import { boatTypeMenu } from './components/boatType'
-import { distanceInput } from './components/distanceInput'
+import { BoatTypeMenu } from './components/BoatType'
+import { DistanceInput } from './components/DistanceInput'
+import { TimeInput } from './components/timeInput'
 
 function App() {
   const [boatType, setBoatType] = useState('1x')
   const [distance, setDistance] = useState(2000)
+  const [time, setTime] = useState('no time entered')
 
   return (
     <div className="App">
@@ -14,8 +16,9 @@ function App() {
       </header>
       <main>
         <div class="input-container">
-          {boatTypeMenu(boatType, setBoatType)}
-          {distanceInput(distance, setDistance)}
+          {BoatTypeMenu(boatType, setBoatType)}
+          {DistanceInput(distance, setDistance)}
+          {TimeInput(setTime)}
         </div>
       </main>
     </div>

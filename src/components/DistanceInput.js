@@ -1,4 +1,4 @@
-export function distanceInput(distance, setDistance) {
+export function DistanceInput(distance, setDistance) {
   return (
     <div class="distance">
       <div class="distance-label">
