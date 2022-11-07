@@ -26,17 +26,23 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  width: 250px;
 }
 
 .boat-type {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 1rem;
   height: 10vh;
-  width: 20vw;
+  width: 250px;
+  margin-top: 1rem;
 }
 
 .boat-type > p {
@@ -48,15 +54,14 @@ main {
   background-color: whitesmoke;
   font-size: calc(8px + 1vh);
   height: 100%;
-  flex-basis: 60%;
+  width: 150px;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-  flex-basis: 40%;
   height: 100%;
-  
+  width: 100px;
 }
 
 .dropbtn {
@@ -67,6 +72,7 @@ main {
   height: 100%;
   border: none;
   width: 100%;
+  white-space: nowrap;
 }
 
 .dropdown-content {
@@ -103,7 +109,7 @@ main {
   display: flex;
   flex-direction: row;
   height: 10vh;;
-  width: 20vw;
+  width: 250px;
 }
 
 .distance > .distance-label {
@@ -117,17 +123,16 @@ main {
   padding-right: 1rem;
   font-size: calc(10px + 1vh);
   border: none;
-  flex-basis: 40%;
+  width: 100px;
 }
 
 .distance > input {
   height: 100%;
-  width: 10vw;
+  width: 150px;
   display: flex;
   text-align: center;
   padding: 1rem;
   background-color: whitesmoke;
   border: none;
   font-size: calc(8px + 1vh);
-  flex-basis: 60%;
 }

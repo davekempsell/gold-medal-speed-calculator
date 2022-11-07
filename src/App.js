@@ -13,8 +13,10 @@ function App() {
         <h1>%Gold Medal Time Calculator</h1>
       </header>
       <main>
-        {boatTypeMenu(boatType, setBoatType)}
-        {distanceInput(distance, setDistance)}
+        <div class="input-container">
+          {boatTypeMenu(boatType, setBoatType)}
+          {distanceInput(distance, setDistance)}
+        </div>
       </main>
     </div>
   );
