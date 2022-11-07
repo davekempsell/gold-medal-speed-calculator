@@ -1,7 +1,7 @@
 :root {
-  --primary-color: rgb(218, 177, 173);
+  --primary-color: rgb(23, 15, 102);
   --secondary-color: rgb(211, 211, 211);
-  --tertiary-color: rgb(188, 139, 135);
+  --tertiary-color: rgb(72, 62, 166);
   --label-width: 120px;
   --input-width: 180px;
 }
@@ -77,10 +77,20 @@ main {
   white-space: nowrap;
 }
 
-.dropdown-content {
+.dropdown > .mens-boats {
   display: none;
   position: absolute;
-  left: 10%;
+  left: 0%;
+  background-color: whitesmoke;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown > .womens-boats {
+  display: none;
+  position: absolute;
+  left: 65%;
   background-color: whitesmoke;
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

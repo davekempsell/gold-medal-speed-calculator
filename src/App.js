@@ -7,7 +7,7 @@ import { Speed } from './components/Speed';
 import { TimeInput } from './components/timeInput'
 
 function App() {
-  const [boatType, setBoatType] = useState('1x')
+  const [boatType, setBoatType] = useState('M1x')
   const [distance, setDistance] = useState(2000)
   const [time, setTime] = useState([0,0,0])
   const [boatSpeed, setBoatSpeed] = useState()
