@@ -1,12 +1,11 @@
 export function Speed(distance, time) {
   
-    console.log(time)
-    let mins = parseInt(time[0] * 60)
-    let secs = parseInt(time[1])
-    let tenths = parseFloat(time[2] / 10)
+    let mins = time[0] === '' ? 0 : parseInt(time[0] * 60)
+    let secs = time[1] === '' ? 0 : parseInt(time[1])
+    let tenths = time[2] === '' ? 0 : parseFloat(time[2] / 10)
     let total = parseFloat(mins + secs + tenths)
 
-    console.log(total)
+    let boatSpeed = total > 0 ? distance / total : 0
 
   return (
     <div className="speed">
@@ -14,7 +13,7 @@ export function Speed(distance, time) {
         Speed 
       </div>
       <div className="speed-display">
-        {total}
+        {boatSpeed.toFixed(2)}m/s
       </div>
     </div>
   )
