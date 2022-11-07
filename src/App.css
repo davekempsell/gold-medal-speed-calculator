@@ -167,8 +167,25 @@ main {
   height: 10vh;
 }
 
-
 .speed > .speed-display {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background-color: whitesmoke;
+  font-size: calc(8px + 1vh);
+  height: 100%;
+  width: var(--input-width);
+}
+
+.gms {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+}
+
+.gms > .gms-display {
   display: flex;
   text-align: center;
   flex-direction: column;
