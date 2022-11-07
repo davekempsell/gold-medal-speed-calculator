@@ -9,7 +9,7 @@ export function Speed(distance, time) {
 
   return (
     <div className="speed">
-      <div className="speed-label">
+      <div className="label">
         Speed 
       </div>
       <div className="speed-display">

@@ -11,7 +11,7 @@ export function TimeInput(time, setTime) {
 
   return (
     <div className="time">
-    <div className="time-label">
+    <div className="label">
       Time (mm:ss:0) 
     </div>
     <div className="input-wrapper">

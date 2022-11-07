@@ -15,6 +15,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   text-align: center;
+  color: whitesmoke
 }
 
 * {
@@ -106,13 +107,7 @@ main {
   background-color: var(--tertiary-color);
 }
 
-.distance {
-  display: flex;
-  flex-direction: row;
-  height: 10vh;
-}
-
-.distance > .distance-label {
+.label {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,6 +119,12 @@ main {
   font-size: calc(10px + 1vh);
   border: none;
   width: var(--label-width);
+}
+
+.distance {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
 }
 
 .distance > input {
@@ -141,20 +142,6 @@ main {
   display: flex;
   flex-direction: row;
   height: 10vh;
-}
-
-.time > .time-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--primary-color);
-  text-align: center;
-  color: white;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: calc(10px + 1vh);
-  border: none;
-  width: var(--label-width);
 }
 
 .time > .input-wrapper {
@@ -180,19 +167,6 @@ main {
   height: 10vh;
 }
 
-.speed > .speed-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--primary-color);
-  text-align: center;
-  color: white;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: calc(10px + 1vh);
-  border: none;
-  width: var(--label-width);
-}
 
 .speed > .speed-display {
   display: flex;
