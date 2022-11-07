@@ -26,6 +26,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  gap: 1rem;
 }
 
 .boat-type {
@@ -33,38 +34,45 @@ main {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 1rem;
-  min-height: 10vh;
+  margin-top: 1rem;
+  height: 10vh;
+  width: 20vw;
 }
 
 .boat-type > p {
   display: flex;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 1rem;
   background-color: whitesmoke;
-  min-width: 55px;
-  height: 100%;
   font-size: calc(8px + 1vh);
-}
-
-.dropbtn {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem;;
-  font-size: calc(10px + 1vh);
-  min-height: 100%;
-  border: none;
-  margin: 10px;
+  height: 100%;
+  flex-basis: 60%;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  flex-basis: 40%;
+  height: 100%;
+  
+}
+
+.dropbtn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  font-size: calc(10px + 1vh);
+  height: 100%;
+  border: none;
+  width: 100%;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  left: 10%;
   background-color: whitesmoke;
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -94,8 +102,8 @@ main {
 .distance {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  height: 10vh;
+  height: 10vh;;
+  width: 20vw;
 }
 
 .distance > .distance-label {
@@ -103,13 +111,13 @@ main {
   flex-direction: column;
   justify-content: center;
   background-color: var(--primary-color);
-  align-self: center;
+  text-align: center;
   color: white;
-  height: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: calc(10px + 1vh);
   border: none;
+  flex-basis: 40%;
 }
 
 .distance > input {
@@ -121,4 +129,5 @@ main {
   background-color: whitesmoke;
   border: none;
   font-size: calc(8px + 1vh);
+  flex-basis: 60%;
 }

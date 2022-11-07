@@ -1,10 +1,10 @@
-export function distanceInput() {
+export function distanceInput(distance, setDistance) {
   return (
     <div class="distance">
       <div class="distance-label">
         Distance
       </div>
-      <input type="number"></input>
+      <input type="number" value={distance} onInput={e => setDistance(e.target.value)}></input>
     </div>
   )
 }
