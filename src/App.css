@@ -13,10 +13,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-size: calc(10px + 1vmin);
-  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
   color: whitesmoke;
-  padding: none;
 }
 
 * {

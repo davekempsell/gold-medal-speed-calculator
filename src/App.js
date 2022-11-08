@@ -5,6 +5,8 @@ import { DistanceInput } from './components/DistanceInput'
 import { GoldMedalSpeed } from './components/GoldMedalSpeed';
 import { Speed } from './components/Speed';
 import { TimeInput } from './components/timeInput'
+import { faCircleQuestion, faPercent } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [boatType, setBoatType] = useState('M1x')
@@ -15,7 +17,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>%Gold Medal Speed Calculator</h1>
+        <div className="header-content">
+          <FontAwesomeIcon id="percent-icon" icon={faPercent} size="2x"/>
+          <h1>GMS Calculator</h1>
+          <FontAwesomeIcon id='help-icon' icon={faCircleQuestion} size="2x"/>
+        </div>
       </header>
       <main>
         <div className="input-container">
@@ -27,7 +33,7 @@ function App() {
         </div>
       </main>
       <footer>
-        
+
       </footer>
     </div>
   );
