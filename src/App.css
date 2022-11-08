@@ -76,7 +76,6 @@ main {
   border: none;
   width: 100%;
   white-space: nowrap;
-  -webkit-appearance: none;
 }
 
 .dropdown > .mens-boats {
@@ -87,6 +86,7 @@ main {
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  -webkit-appearance: none;
 }
 
 .dropdown > .womens-boats {
@@ -97,6 +97,7 @@ main {
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  -webkit-appearance: none;
 }
 
 .dropdown-content > button {
