@@ -28,13 +28,13 @@
   white-space: nowrap;
 }
 
-.percentages:hover #percent-icon {
+/* .percentages:hover #percent-icon {
   color: var(--tertiary-color)
 }
 
 .percentages:hover .percentage-data {
   display: flex;
-}
+} */
 
 .percentage-data {
   display: none;
