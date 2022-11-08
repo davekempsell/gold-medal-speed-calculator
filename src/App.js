@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>% Gold Medal Time Calculator</h1>
+        <h1>%Gold Medal Speed Calculator</h1>
       </header>
       <main>
         <div className="input-container">
