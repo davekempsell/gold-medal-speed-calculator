@@ -26,6 +26,52 @@
   color: whitesmoke;
 }
 
+.help:hover #help-icon {
+  color: var(--tertiary-color)
+}
+
+.help:hover .help-content {
+  display: flex;
+}
+
+.help-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60vh;
+  width: 20vw;
+  border: solid 2px black;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  z-index: 1
+}
+
+.percentages:hover #percent-icon {
+  color: var(--tertiary-color)
+}
+
+.percentages:hover .percentage-data {
+  display: flex;
+}
+
+.percentage-data {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60vh;
+  width: 20vw;
+  border: solid 2px black;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  z-index: 1
+}
+
 * {
   box-sizing: border-box;
 }
@@ -37,14 +83,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 1rem;
-  width: calc(var(--input-width) + var(--label-width))
 }
 
 .boat-type {
@@ -238,8 +277,4 @@ main {
   font-size: calc(8px + 1vh);
   height: 100%;
   width: var(--input-width);
-}
-
-footer {
-
 }
