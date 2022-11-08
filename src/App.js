@@ -26,6 +26,9 @@ function App() {
           {GoldMedalSpeed(boatType, boatSpeed)}
         </div>
       </main>
+      <footer>
+        
+      </footer>
     </div>
   );
 }
