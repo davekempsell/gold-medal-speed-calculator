@@ -22,11 +22,10 @@ export function Header() {
             <p>Enter the correct distance and time for the piece, and the calculator will give you the boat speed, and it's percentage of the Gold Medal Speed for that boat class.</p>
             <footer>
               <p>Built by Dave Kempsell - November 2022</p>
-              <a href="https://github.com/davekempsell/gold-medal-speed-calculator" target="_blank" rel="noreferrer">
+              {/* <a href="https://github.com/davekempsell/gold-medal-speed-calculator" target="_blank" rel="noreferrer">
                 Check out the code on GitHub
                 <FontAwesomeIcon icon={faGithub}/>
-              </a>
-              
+              </a> */}
             </footer>
           </div>
         </div>
