@@ -1,6 +1,7 @@
 import { faCircleQuestion, faPercent } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+// import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GMSContent } from "./GMSContent";
 
 export function Header() {
   return (
@@ -8,9 +9,7 @@ export function Header() {
       <div className="header-content">
         <div className="percentages">
           <FontAwesomeIcon id="percent-icon" icon={faPercent} size="2x"/>
-          <div className="percentage-data">
-            
-          </div>
+          { GMSContent() }
         </div>
         <h1>GMS Calculator</h1>
         <div className="help">

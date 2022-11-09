@@ -1,4 +1,6 @@
-function boatTypeButton(boat, boatType, setBoatType) {
+import { goldMedalTimes } from '../GMT-data/goldMedalTimes'
+
+function boatTypeButton(boat, setBoatType) {
   return (
     <button 
       type="submit" 
@@ -12,21 +14,34 @@ function boatTypeButton(boat, boatType, setBoatType) {
 
 export function BoatTypeMenu(boatType, setBoatType) {
 
-  const boatTypes = ['M1x', 'M2x', 'M4x', 'M2-', 'M4-', 'M4+', 'M8+']
-  const boatTypesWomen = ['W1x', 'W2x', 'W4x', 'W2-', 'W4-', 'W4+', 'W8+']
+  const boatTypesMen = Object.keys(goldMedalTimes)
+    .filter(element => {
+      if(element.includes('M')){
+        return element
+      }
+      return false
+    })
+
+  const boatTypesWomen = Object.keys(goldMedalTimes)
+    .filter(element => {
+      if(element.includes('W')){
+        return element
+      }
+      return false
+    })
 
   return (
     <div className="boat-type">
       <div className="dropdown">
         <button className="dropbtn">Boat Type</button>
         <div className="dropdown-content mens-boats" >
-          {boatTypes.map(boat => {
-            return (boatTypeButton(boat, boatType, setBoatType))
+          {boatTypesMen.map(boat => {
+            return (boatTypeButton(boat, setBoatType))
           })}
         </div>
         <div className="dropdown-content womens-boats">
           {boatTypesWomen.map(boat => {
-            return (boatTypeButton(boat, boatType, setBoatType))
+            return (boatTypeButton(boat, setBoatType))
           })}
         </div>
       </div>

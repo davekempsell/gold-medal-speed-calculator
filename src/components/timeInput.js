@@ -27,6 +27,7 @@ export function TimeInput(time, setTime) {
           }
         }}>
       </input>
+      <div className="semi-colon">:</div>
       <input 
         type="number" 
         min="0" max="59" 
@@ -38,6 +39,7 @@ export function TimeInput(time, setTime) {
           }
         }}>
       </input>
+      <div className="semi-colon">:</div>
       <input 
         type="number" 
         min="0" max="9" 
